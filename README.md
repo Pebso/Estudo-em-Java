@@ -3,14 +3,14 @@ Estudos gerais em java. Orientação objeto, estruturas sequenciais e condiciona
 
 
 
-package atividades.em.java;
+         package atividades.em.java;
 
 
  
-  @author pedro
+         @author pedro
  
-import java.util.Scanner;
-public class AtividadesEmJava {
+         import java.util.Scanner;
+         public class AtividadesEmJava {
 
     
            @param args the command line arguments
