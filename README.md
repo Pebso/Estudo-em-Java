@@ -242,3 +242,87 @@ Acima de 40 anos 80,00.
     }
     
     }
+    -- 
+**EXERCICIO**
+Um hotel possui a seguinte tabela para cobrança da diária de seus clientes:
+ Apto Simples
+Número de diárias < 10
+100,00
+Número de diárias entre 10 e 15
+90,00
+Número de diárias > 15
+80,00
+----------------------
+ Apto Duplo
+Número de diárias < 10
+140,00
+Número de diárias entre 10 e 15
+120,00
+Número de diárias > 15
+100,00
+----------------------------
+Faça um programa que leia a tipo de apartamento e a quantidade de dias em que um hóspede esteve no hotel, 
+e calcule o total a ser pago pelo mesmo.
+package aula;
+import java.util.Scanner;
+
+
+public class Aula {
+
+         /**
+          * @param args the command line arguments
+          */
+         public static void main(String[] args) {
+          int dias,simples100,simples90,simples80,duplo140,duplo120,duplo100;
+          double estadia100, estadia140;     
+         String simples, duplo;     
+          Scanner leia = new Scanner(System.in);
+         System.out.println("Selecione: apto simples ou duplo:");
+         System.out.println("Simples? S/N");
+         simples = leia.next();
+         System.out.println("Duplo? S/N");
+         duplo = leia.next();
+         System.out.println("Quantos dias o hospede ficou?");
+         dias = leia.nextInt();
+         simples100 = dias *100;
+         simples90 = dias *90;
+         simples80 = dias *80;
+         duplo140 = dias *140;
+         duplo120 = dias *120;
+         duplo100 = dias *100;
+    
+         if(dias<10&&(simples.equals("s")||simples.equals("S"))){
+         System.out.println("Diarias no valor de " + simples100);
+        
+         }
+         else 
+             if(dias==10||dias<=15&&(simples.equals("s")||simples.equals("S"))){
+                 System.out.println("Diarias no valor de " +simples90);
+         }
+         else
+                 if(dias>15&&(simples.equals("s")||simples.equals("S"))){
+                     System.out.println("Diarias no valor de " +simples80);
+            }
+         else
+                     if(dias<10&&(duplo.equals("s")||duplo.equals("S"))){
+             System.out.println("Diarias no valor de " +duplo140);
+         }
+         else
+                         if(dias==10||dias<=15&&(duplo.equals("s")||duplo.equals("S"))){
+                             System.out.println("Diarias no valor de " +duplo120);
+                    }
+         else
+                             if(dias>15&&(duplo.equals("s")||duplo.equals("S"))){
+                                 System.out.println("Diarias no valor de " +duplo100);
+                        }
+                        else{
+                            
+                        }
+                            
+    
+    }
+    
+}
+ 
+
+ 
