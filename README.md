@@ -1,8 +1,11 @@
 # Estudo-em-Java
 Estudos gerais em java. Orientação objeto, estruturas sequenciais e condicionais, etc... 
-EXERCICIOS ESTRUTURA CONDICIONAL
-1.
-Faça um programa que receba as duas notas de um aluno, calcule sua média, e que imprima a sua situação: 
+
+
+**EXERCICIOS ESTRUTURA CONDICIONAL**
+
+
+1.Faça um programa que receba as duas notas de um aluno, calcule sua média, e que imprima a sua situação: 
 >= 7 -> Aprovado
 < 7 -> Reprovado
 
