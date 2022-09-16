@@ -1,49 +1,23 @@
 # Estudo-em-Java
 Estudos gerais em java. Orientação objeto, estruturas sequenciais e condicionais, etc... 
+EXERCICIOS ESTRUTURA CONDICIONAL
+1.
+Faça um programa que receba as duas notas de um aluno, calcule sua média, e que imprima a sua situação: 
+>= 7 -> Aprovado
+< 7 -> Reprovado
 
 
+     package aula;
+     import java.util.Scanner;
 
-         package atividades.em.java;
 
+     public class Aula {
 
- 
-         @author pedro
- 
-         import java.util.Scanner;
-         public class AtividadesEmJava {
+  
+     public static void main(String[] args) {
+     Scanner leia= new Scanner(System.in);
 
-    
-           @param args the command line arguments
-     
-           public static void main(String[] args) {
-        
-                *******EXERCICIO*****
-        Faça um programa que leia um número e informe se o mesmo é par ou ímpar.
-        (aplicação de if e else)
-        Scanner leia = new Scanner(System.in);
-        double num1, num2;
-      System.out.println("Entre com dois números");
-        num1 = leia.nextDouble();
-        num2 = leia.nextDouble();
-        if(num1>num2){
-            System.out.println("O maior é" + num1);
-            System.out.println("O menor é" + num2);
-        }
-        else if (num2>num1){
-            System.out.println("O maior é " +num2);
-            System.out.println("O menor é " +num1);
-        }
-        else{
-            System.out.println("Os numeros são iguals");
-        }
-        }
-        }
-  --
-         **EXERCICIOS**
-        DIFERENÇA ENTRE NUMEROS
-
-        
-        double nota1, nota2, media;
+     double nota1, nota2, media;
      System.out.println("informe a nota das duas provas: ");
      nota1 = leia.nextDouble();
      nota2 = leia.nextDouble();
@@ -54,10 +28,23 @@ Estudos gerais em java. Orientação objeto, estruturas sequenciais e condiciona
      else{
          System.out.println("REPROVADO");
      }
---
-        PROVAS APROVADO REPROVADO 3 VARIAVEIS
-        
-        double nota1, nota2, nota3, media;
+     }
+     }
+
+
+2.Faça um programa que receba 3 notas de um aluno, calcule e mostre uma mensagem de acordo com sua média:
+
+     package aula;
+     import java.util.Scanner;
+
+
+     public class Aula {
+
+  
+     public static void main(String[] args) {
+     Scanner leia= new Scanner(System.in);
+
+     double nota1, nota2, nota3, media;
         System.out.print("Informe a nota da primeira prova: ");
         nota1 = leia.nextDouble();
         System.out.print("Informe a nota da segunda prova: ");
@@ -73,44 +60,61 @@ Estudos gerais em java. Orientação objeto, estruturas sequenciais e condiciona
             }
             else{
                 System.out.println("APROVADO");
-        Faça um programa que leia um número e informe se o mesmo é par ou ímpar.
-        System.out.println("Digite um número: ");
-        int numero = leia.nextInt();
-        if(numero%2==0){
-            System.out.println("O numero é par");
-        }
-        else{
-            System.out.println("O numero é ímpar");
-            }
-    
---**EXERCICIO**
-        Faça um programa que leia os três lados de um triângulo e imprima o tipo de triângulo:
-Equilátero: os três lados são iguais
-Isósceles: 2 lados são iguais
-Qualquer: caso contrário.
---
-        System.out.println("Digite os lados do triangulo: ");
-        double l1,l2,l3;
-        l1 = leia.nextDouble();
-        l2 = leia.nextDouble();
-        l3 = leia.nextDouble();
-        if(l1==l2&&l2==l3){
-            System.out.println("Equilátero");
-        }
-        else if(l1==l2||l1==l3||l2==l3){
-            System.out.println("Isosceles");
-        }
-        else{
-            System.out.println("Qualquer");
-        }
-      
-     
-        
---       **EXERCICIO**
-        4. Construa um programa para determinar se o indivíduo está com um peso favorável. Essa situação é determinada através do IMC (Índice de Massa
+     }
+     }
+     }
+
+
+3.  Faça um programa para resolver equação de segundo grau (ax² + bx + c = 0).
+
+
+     package estruturassequenciais;
+     import java.util.Scanner;
+     public class EstruturasSequenciais {
+
+     /**
+     * @param args the command line arguments
+     */
+     public static void main(String[] args) {
+       
+        Scanner leia = new Scanner(System.in);
+        double A,B,C,DELTA,X1,X2;
+       System.out.println("Informe o coeficiente A");
+       A = leia.nextDouble();
+       System.out.println("Informe o coeficiente B");
+       B = leia.nextDouble();
+       System.out.println("Informe o coeficiente C");
+       C = leia.nextDouble();
+       DELTA = ((B*B)-(4*A*C));
+       if(DELTA >=0){
+           X1 = ((-B + (Math.sqrt(DELTA))) / (2*A));
+           X2 = ((-B - (Math.sqrt(DELTA))) / (2*A));
+           System.out.println("As raizes são" + X1+ "e" +X2);
+       }
+       else{
+           System.out.println("Não existem raizes reais");
+       }
+           
+       
+           
+       
+       }
+
+4.4. Construa um programa para determinar se o indivíduo está com um peso favorável. Essa situação é determinada através do IMC (Índice de Massa
 Corpórea), que é definida como sendo a relação entre o peso (PESO – em kg) e o quadrado da Altura (ALTURA – em m) do indivíduo. Ou seja,
 IMC= PESO/ALTURA2
---
+
+     package estruturassequenciais;
+     import java.util.Scanner;
+     public class EstruturasSequenciais {
+
+     /**
+     * @param args the command line arguments
+     */
+     public static void main(String[] args) {
+       
+        Scanner leia = new Scanner(System.in);
+
         double peso, altura, imc, altura2;
 
         System.out.println("Digite seu peso em kg: ");
@@ -130,18 +134,34 @@ IMC= PESO/ALTURA2
             System.out.println("Obeso");
         } else {
             System.out.println("Obeso Morbido");
-        
-        
-        
- --        
-        **EXERCICIO**
-        Um determinado hotel cobra R$ 500,00 a diária e mais uma taxa de serviços. Faça um programa que leia o número de diárias e calcule o total a ser pago pelo cliente, sabendo-se que a taxa de serviços é de: 
+     }
+     }
+     }
+
+5.(SEM FAZER)
 
 
-        R$ 15,00 por dia, se número de diárias < 15 
-        R$ 10,00 por dia, se número de diárias = 15 
-        R$ 5,00 por dia, se número de diárias > 15
-        Scanner leia = new Scanner(System.in);
+
+6. (SEM FAZER)
+
+7.(SEM FAZER)
+
+8.(SEM FAZER)
+
+9.Um determinado hotel cobra R$ 500,00 a diária e mais uma taxa de serviços. Faça um programa que leia o número de diárias e calcule o total a ser pago pelo cliente, sabendo-se que a taxa de serviços é de: 
+R$ 15,00 por dia, se número de diárias < 15 
+R$ 10,00 por dia, se número de diárias = 15 
+R$ 5,00 por dia, se número de diárias > 15
+
+     package estruturassequenciais;
+     import java.util.Scanner;
+     public class EstruturasSequenciais {
+
+     /**
+      * @param args the command line arguments
+      */
+     public static void main(String[] args) {
+     Scanner leia = new Scanner(System.in);
         int diaria, dias, tax, tax2, tax3, dia2, dia3;
         
         System.out.println("Quantos dias pretende ficar? ");
@@ -166,41 +186,29 @@ IMC= PESO/ALTURA2
         else{
             
         }
-        
-        
-        
- -- 
- ***EXERCICIO***
+        }
+        }
 
- 10. Uma academia de musculação possui a seguinte tabela para cobrança da mensalidade de seus clientes:
 
-  **HOMENS:**
-até 15 anos 60,00
-16 a 18 anos 75,00
-19 a 30 anos 90,00
-31 a 40 anos 85,00
-Acima de 40 anos 80,00.
+10.Uma academia de musculação possui a seguinte tabela para cobrança da mensalidade de seus clientes:
+HOMENS: até 15 anos 60,00 16 a 18 anos 75,00 19 a 30 anos 90,00 31 a 40 anos 85,00 Acima de 40 anos 80,00.
+MULHERES até 18 anos 60,00 19 a 25 anos 90,00 26 a 40 anos 85,00 Acima de 40 anos 80,00.
+Faça um programa que leia a idade e sexo do cliente, e imprima o valor da mensalidade que o mesmo deve pagar.
 
-**MULHERES**
-até 18 anos 60,00
-19 a 25 anos 90,00
-26 a 40 anos 85,00
-Acima de 40 anos 80,00.
 
-***Faça um programa que leia a idade e sexo do cliente, e imprima o valor da mensalidade que o mesmo deve pagar.***
-      
-      package javaapplication11;
-      import java.util.Scanner;
+
+     package javaapplication11;
+     import java.util.Scanner;
      /**
-     *
+      *
      * @author aluno
-     */
-      public class JavaApplication11 {
+       */
+     public class JavaApplication11 {
 
-    /**
+      /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+      public static void main(String[] args) {
      Scanner leia = new Scanner(System.in);
      int idade;
      String sexo;
@@ -239,90 +247,77 @@ Acima de 40 anos 80,00.
                              else{
                                  System.out.println("Mensalidade de R$ 80,00");
                              }
-    }
+         }
     
-    }
-    -- 
-**EXERCICIO**
-Um hotel possui a seguinte tabela para cobrança da diária de seus clientes:
- Apto Simples
-Número de diárias < 10
-100,00
-Número de diárias entre 10 e 15
-90,00
-Número de diárias > 15
-80,00
-----------------------
- Apto Duplo
-Número de diárias < 10
-140,00
-Número de diárias entre 10 e 15
-120,00
-Número de diárias > 15
-100,00
-----------------------------
-Faça um programa que leia a tipo de apartamento e a quantidade de dias em que um hóspede esteve no hotel, 
-e calcule o total a ser pago pelo mesmo.
-package aula;
-import java.util.Scanner;
+     }
+
+11.  Um hotel possui a seguinte tabela para cobrança da diária de seus clientes: Apto Simples Número de diárias < 10 100,00 Número de diárias entre 10 e 15 90,00 Número de diárias > 15 80,00
+Apto Duplo Número de diárias < 10 140,00 Número de diárias entre 10 e 15 120,00 Número de diárias > 15 100,00
+Faça um programa que leia a tipo de apartamento e a quantidade de dias em que um hóspede esteve no hotel, e calcule o total a ser pago pelo mesmo.
 
 
-public class Aula {
+
+
+
+         package javaapplication11;
+         import java.util.Scanner;
+         /**
+         *
+           * @author aluno
+           */
+         public class JavaApplication11 {
 
          /**
           * @param args the command line arguments
-          */
-         public static void main(String[] args) {
+         */
+          public static void main(String[] args) {
           int dias,simples100,simples90,simples80,duplo140,duplo120,duplo100;
           double estadia100, estadia140;     
-         String simples, duplo;     
+          String simples, duplo;     
           Scanner leia = new Scanner(System.in);
-         System.out.println("Selecione: apto simples ou duplo:");
-         System.out.println("Simples? S/N");
-         simples = leia.next();
-         System.out.println("Duplo? S/N");
-         duplo = leia.next();
-         System.out.println("Quantos dias o hospede ficou?");
-         dias = leia.nextInt();
-         simples100 = dias *100;
-         simples90 = dias *90;
-         simples80 = dias *80;
-         duplo140 = dias *140;
-         duplo120 = dias *120;
-         duplo100 = dias *100;
-    
-         if(dias<10&&(simples.equals("s")||simples.equals("S"))){
-         System.out.println("Diarias no valor de " + simples100);
-        
-         }
-         else 
-             if(dias==10||dias<=15&&(simples.equals("s")||simples.equals("S"))){
-                 System.out.println("Diarias no valor de " +simples90);
-         }
-         else
-                 if(dias>15&&(simples.equals("s")||simples.equals("S"))){
-                     System.out.println("Diarias no valor de " +simples80);
-            }
-         else
-                     if(dias<10&&(duplo.equals("s")||duplo.equals("S"))){
-             System.out.println("Diarias no valor de " +duplo140);
-         }
-         else
-                         if(dias==10||dias<=15&&(duplo.equals("s")||duplo.equals("S"))){
-                             System.out.println("Diarias no valor de " +duplo120);
-                    }
-         else
-                             if(dias>15&&(duplo.equals("s")||duplo.equals("S"))){
-                                 System.out.println("Diarias no valor de " +duplo100);
-                        }
-                        else{
-                            
-                        }
-                            
-    
-    }
-    
-}
- 
+          System.out.println("Selecione: apto simples ou duplo:");
+          System.out.println("Simples? S/N");
+          simples = leia.next();
+          System.out.println("Duplo? S/N");
+          duplo = leia.next();
+          System.out.println("Quantos dias o hospede ficou?");
+          dias = leia.nextInt();
+          simples100 = dias *100;
+          simples90 = dias *90;
+          simples80 = dias *80;
+          duplo140 = dias *140;
+          duplo120 = dias *120;
+          duplo100 = dias *100;
 
- 
+          if(dias<10&&(simples.equals("s")||simples.equals("S"))){
+          System.out.println("Diarias no valor de " + simples100);
+    
+          }
+          else 
+          if(dias==10||dias<=15&&(simples.equals("s")||simples.equals("S"))){
+             System.out.println("Diarias no valor de " +simples90);
+          }
+          else
+             if(dias>15&&(simples.equals("s")||simples.equals("S"))){
+                 System.out.println("Diarias no valor de " +simples80);
+          }
+          else
+                 if(dias<10&&(duplo.equals("s")||duplo.equals("S"))){
+           System.out.println("Diarias no valor de " +duplo140);
+           }
+           else
+                     if(dias==10||dias<=15&&(duplo.equals("s")||duplo.equals("S"))){
+                         System.out.println("Diarias no valor de " +duplo120);
+                }
+            else
+                         if(dias>15&&(duplo.equals("s")||duplo.equals("S"))){
+                             System.out.println("Diarias no valor de " +duplo100);
+                    }
+                    else{
+                        
+                    }
+                        
+
+             }
+             }
+
