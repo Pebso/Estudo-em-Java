@@ -326,17 +326,28 @@ Faça um programa que leia a tipo de apartamento e a quantidade de dias em que u
 
 # EXEMPLO ESTRUTURA REPETIÇAO FOR
 
-   public static void main(String[] args) {
-       int vet [] = new int[5];
-        Scanner leia = new Scanner(System.in);      
-       int contador;      
-     
-       for(contador=0; contador<5; contador++){
-       vet[contador] = contador;
-       System.out.print("informe as notas: ");
-       vet[contador] = leia.nextInt();
-       }System.out.println("as notas informadas foram:");
+        public static void main(String[] args) {
+       
+        Scanner leia = new Scanner(System.in);  
+        int vet [] = new int[5];
+        double notas;
+        int i;      
+        // pra ler sempre vai ser de 0 ate o tamanho do vetor, e o ++ eu uso para incrementar.
+        // leitura de dados:
+        for(i=0; i< vet.length; i++){
+        vet[i] = i;
+        System.out.print("informe as notas: ");
+        vet[i] = leia.nextInt();
        
        
-       for(contador=0; contador<5; contador++){
-         System.out.print(vet[contador] + ",");
+       
+       
+        }System.out.println("as notas informadas foram:");
+        // saida de dados:
+        // pra eu ter um espaço entre cada inf do vetor uso o "  "
+        // o legth vai preencher ate o tamanho do meu vetor, podendo assim eu alterar o tamanho do vetor sem ter que trabalhar toda a estrutura de codigo
+        for(i=0; i<vet.length; i++){
+           
+         System.out.println(vet[i]+ " ");
+          
+         }
