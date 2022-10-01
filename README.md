@@ -324,3 +324,19 @@ Faça um programa que leia a tipo de apartamento e a quantidade de dias em que u
              }
              }
 
+# EXEMPLO ESTRUTURA REPETIÇAO FOR
+
+   public static void main(String[] args) {
+       int vet [] = new int[5];
+        Scanner leia = new Scanner(System.in);      
+       int contador;      
+     
+       for(contador=0; contador<5; contador++){
+       vet[contador] = contador;
+       System.out.print("informe as notas: ");
+       vet[contador] = leia.nextInt();
+       }System.out.println("as notas informadas foram:");
+       
+       
+       for(contador=0; contador<5; contador++){
+         System.out.print(vet[contador] + ",");
