@@ -375,24 +375,24 @@ Faça um programa que leia a tipo de apartamento e a quantidade de dias em que u
            	}
            }
 
-    4 Faça um programa que calcule e mostre a área de um losango AREA = (DIAGONAL MAIOR * DIAGONAL MENOR)/2
+    4  Faça um programa que calcule e mostre a área de um losango AREA = (DIAGONAL MAIOR * DIAGONAL MENOR)/2
 
-           import java.util.Scanner;
-           public class Main
-           {
-	   public static void main(String[] args) {
+            import java.util.Scanner;
+            public class Main
+            {
+	    public static void main(String[] args) {
 		System.out.println("Meça a area de um losango");
 		
-           double area, diagmaior, diagmenor;
-           Scanner leia = new Scanner(System.in);
-           System.out.println("Tamanho da diagonal maior");
-           diagmaior = leia.nextDouble();
+            double area, diagmaior, diagmenor;
+            Scanner leia = new Scanner(System.in);
+            System.out.println("Tamanho da diagonal maior");
+            diagmaior = leia.nextDouble();
                       System.out.println("Tamanho da diagonal menor");
                       diagmenor = leia.nextDouble();
-           area = diagmaior * diagmenor/ 2;
-           System.out.println("A area total é de " + area );
+            area = diagmaior * diagmenor/ 2;
+            System.out.println("A area total é de " + area );
            	}
-           }
+            }
     5 Faça um programa que receba uma temperatura em Celsius, calcule e mostre essa temperatura em Fahrenheit (F = (C*1,8) + 32)
 package estruturassequenciais;
 
