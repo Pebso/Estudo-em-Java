@@ -328,52 +328,52 @@ Faça um programa que leia a tipo de apartamento e a quantidade de dias em que u
     1. Leia três números inteiros e imprima a média aritmética entre esses números.
        int A, B, C, ABC, med;
        
-       new Scanner(System.in).nextLine();
-       A = Integer.parseInt(new Scanner(System.in).nextLine());
-       B = Integer.parseInt(new Scanner(System.in).nextLine());
-       C = Integer.parseInt(new Scanner(System.in).nextLine());
-       ABC = 3;
-       med = (A + B + C) / ABC;
-       System.out.println("MEDIA =" + med);
+           new Scanner(System.in).nextLine();
+           A = Integer.parseInt(new Scanner(System.in).nextLine());
+           B = Integer.parseInt(new Scanner(System.in).nextLine());
+           C = Integer.parseInt(new Scanner(System.in).nextLine());
+           ABC = 3;
+           med = (A + B + C) / ABC;
+           System.out.println("MEDIA =" + med);
 
     2. Faça um programa que receba o ano de nascimento de uma pessoa, o ano atual e imprima:
         1. A idade da pessoa no ano atual
         2. A idade que a pessoa terá em 2050
         
-int ano, anoatual, idade, id, veio;
-new Scanner(System.in).nextLine();
-System.out.println("digite o seu ano de nascimento");
-ano = Integer.parseInt(new Scanner(System.in).nextLine());
-System.out.println("digite o ano atual");
-anoatual = Integer.parseInt(new Scanner(System.in).nextLine());
-idade = anoatual - ano;
-veio = 2050;
-id = veio - ano;
-System.out.println("sua idade é " + idade);
-System.out.println("sua idade em 2050 será " + id);
+           int ano, anoatual, idade, id, veio;
+           new Scanner(System.in).nextLine();
+           System.out.println("digite o seu ano de nascimento");
+           ano = Integer.parseInt(new Scanner(System.in).nextLine());
+           System.out.println("digite o ano atual");
+           anoatual = Integer.parseInt(new Scanner(System.in).nextLine());
+           idade = anoatual - ano;
+           veio = 2050;
+           id = veio - ano;
+           System.out.println("sua idade é " + idade);
+           System.out.println("sua idade em 2050 será " + id);
 
     3. Faça um programa que receba a cotação do dólar em reais, e um valor que o usuário possui em dólares. Imprima este valor em reais.
        
-import java.util.Scanner;
-public class Main
-{
-	public static void main(String[] args) {
+           import java.util.Scanner;
+           public class Main
+           {
+	    public static void main(String[] args) {
 		System.out.println("Conversor Dolar/Real");
 		// variaveis
-double real, dolar, convert;
+           double real, dolar, convert;
 
-Scanner leia = new Scanner(System.in);
+           Scanner leia = new Scanner(System.in);
 
-real = 5.18;
+           real = 5.18;
 
-System.out.println("Digite quanto possui em dólar");
-dolar = leia.nextDouble();
-convert = dolar*real;
-System.out.println("Convertendo seu Dolar em Real, você tem" + convert );
+           System.out.println("Digite quanto possui em dólar");
+           dolar = leia.nextDouble();
+           convert = dolar*real;
+           System.out.println("Convertendo seu Dolar em Real, você tem" + convert );
 
 		
-	}
-}
+           	}
+           }
 
     4. Faça um programa que calcule e mostre a área de um losango AREA = (DIAGONAL MAIOR * DIAGONAL MENOR)/2
 
