@@ -323,6 +323,141 @@ Faça um programa que leia a tipo de apartamento e a quantidade de dias em que u
 
              }
              }
+            # Estrutura Sequencial
+
+    1. Leia três números inteiros e imprima a média aritmética entre esses números.
+       int A, B, C, ABC, med;
+       
+       new Scanner(System.in).nextLine();
+       A = Integer.parseInt(new Scanner(System.in).nextLine());
+       B = Integer.parseInt(new Scanner(System.in).nextLine());
+       C = Integer.parseInt(new Scanner(System.in).nextLine());
+       ABC = 3;
+       med = (A + B + C) / ABC;
+       System.out.println("MEDIA =" + med);
+
+    2. Faça um programa que receba o ano de nascimento de uma pessoa, o ano atual e imprima:
+        1. A idade da pessoa no ano atual
+        2. A idade que a pessoa terá em 2050
+        
+int ano, anoatual, idade, id, veio;
+new Scanner(System.in).nextLine();
+System.out.println("digite o seu ano de nascimento");
+ano = Integer.parseInt(new Scanner(System.in).nextLine());
+System.out.println("digite o ano atual");
+anoatual = Integer.parseInt(new Scanner(System.in).nextLine());
+idade = anoatual - ano;
+veio = 2050;
+id = veio - ano;
+System.out.println("sua idade é " + idade);
+System.out.println("sua idade em 2050 será " + id);
+
+    3. Faça um programa que receba a cotação do dólar em reais, e um valor que o usuário possui em dólares. Imprima este valor em reais.
+       
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Conversor Dolar/Real");
+		// variaveis
+double real, dolar, convert;
+
+Scanner leia = new Scanner(System.in);
+
+real = 5.18;
+
+System.out.println("Digite quanto possui em dólar");
+dolar = leia.nextDouble();
+convert = dolar*real;
+System.out.println("Convertendo seu Dolar em Real, você tem" + convert );
+
+		
+	}
+}
+
+    4. Faça um programa que calcule e mostre a área de um losango AREA = (DIAGONAL MAIOR * DIAGONAL MENOR)/2
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Meça a area de um losango");
+		
+double area, diagmaior, diagmenor;
+Scanner leia = new Scanner(System.in);
+System.out.println("Tamanho da diagonal maior");
+diagmaior = leia.nextDouble();
+System.out.println("Tamanho da diagonal menor");
+diagmenor = leia.nextDouble();
+area = diagmaior * diagmenor/ 2;
+System.out.println("A area total é de " + area );
+	}
+}
+    5. Faça um programa que receba uma temperatura em Celsius, calcule e mostre essa temperatura em Fahrenheit (F = (C*1,8) + 32)
+package estruturassequenciais;
+
+
+import java.util.Scanner;
+public class EstruturasSequenciais {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       
+        Scanner leia = new Scanner(System.in);
+       double C, Faren;
+       System.out.println("Qual a temperatura em Celsius?");
+       C = leia.nextDouble();
+       Faren = (C*1.8) +32;
+       System.out.println("Convertendo Cº em Fº ficariam: " + Faren);
+    }
+    
+}
+
+
+    6. Faça um programa que solicite ao usuário que informe os coeficientes a, b e c de uma equação de segundo grau, e que imprima as raízes desta equação (considere que os valores informados sempre retornarão raízes reais para a equação).
+    
+    
+package estruturassequenciais;
+import java.util.Scanner;
+public class EstruturasSequenciais {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       
+        Scanner leia = new Scanner(System.in);
+        double A,B,C,DELTA,X1,X2;
+       System.out.println("Informe o coeficiente A");
+       A = leia.nextDouble();
+       System.out.println("Informe o coeficiente B");
+       B = leia.nextDouble();
+       System.out.println("Informe o coeficiente C");
+       C = leia.nextDouble();
+       DELTA = ((B*B)-(4*A*C));
+       if(DELTA >=0){
+           X1 = ((-B + (Math.sqrt(DELTA))) / (2*A));
+           X2 = ((-B - (Math.sqrt(DELTA))) / (2*A));
+           System.out.println("As raizes são" + X1+ "e" +X2);
+       }
+       else{
+           System.out.println("Não existem raizes reais");
+       }
+           
+       
+           
+       
+    }
+    
+}
+
+
+
+
+   
+                       
 
 # EXEMPLO ESTRUTURA REPETIÇAO FOR
 
