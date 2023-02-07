@@ -486,3 +486,35 @@ package estruturassequenciais;
          System.out.println(vet[i]+ " ");
           
          }
+
+
+# Treinando um pouco de repetição simples for, com multiplicação de vetores 
+
+         import java.util.Scanner;
+         public class Main
+         {
+	 public static void main(String[] args) {
+	 Scanner	input = new Scanner(System.in);
+		int vet[] = new int[1];
+		int vet2[] = new int[1];
+		int vet3[] = new int[1];
+		
+		int i;
+		for (i =0; i<vet.length; i++){
+		    vet[i] = i;
+		    System.out.println("informe o primeiro numero");
+		    vet[i] = input.nextInt();
+		    
+		}for (i =0; i<vet.length; i++){
+		    vet2[i]=i;
+		    System.out.println("informe um segundo numero");
+		    vet2[i] = input.nextInt();
+		}for (i =0; i<vet.length;i++){
+		    vet3[i]= vet[i] * vet2[i];
+		    System.out.println("a multiplicação dos numeros informados é  " + vet3[i] + " ");
+		}
+		
+		
+	  }
+          }
+
